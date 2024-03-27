@@ -153,7 +153,6 @@ body {
   .mobile-content {
     display: block;
     background-color: #0069ff;
-    height: 40vh;
     color: white;
     display: flex;
     justify-content: center;
