@@ -1,0 +1,183 @@
+@font-face {
+  font-family: "arial-bold";
+  src: url("../fonts/Arial\ Bold.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "gotham-bold";
+  src: url("../fonts/Gotham-Bold.otf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "gotham-book";
+  src: url("../fonts/Gotham-Book.otf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "gotham-light";
+  src: url("../fonts/Gotham-Light.otf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "gotham-medium";
+  src: url("../fonts/Gotham-Medium.otf");
+  font-style: normal;
+  font-weight: normal;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  font-family: "gotham-light";
+}
+.index-main {
+  background-image: url(../assets/index.png);
+  background-position: end;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.index-bg-line {
+  position: relative;
+  top: 68px;
+  width: 83%;
+}
+.logo {
+  width: 100%;
+}
+.menu-nav {
+  width: 90%;
+}
+.collapse {
+  justify-content: end;
+}
+.navbar-toggler {
+  border: 2px solid white;
+  margin-left: 10px;
+}
+.quote {
+  background-color: white;
+  font-weight: bold;
+  font-family: "gotham-bold";
+  color: black;
+  letter-spacing: 0px;
+  text-align: center;
+  padding: 8px 15px;
+  width: 140px;
+  border-radius: 25px;
+}
+.slogan-container {
+  color: white;
+  position: relative;
+  top: 10.3rem;
+  left: 21rem;
+  width: 500px;
+  font-size: 1.5rem;
+  z-index: 100;
+}
+.slogan-container h1 {
+  font-size: 3rem;
+  font-family: "gotham-bold";
+}
+.slogan-container p {
+  font-weight: bold;
+}
+.mobile-content {
+  display: none;
+}
+
+/*media queries*/
+
+@media only screen and (min-width: 1400px) and (max-width: 1600px) {
+  .slogan-container {
+    top: 6.5rem;
+    left: 13.5rem;
+  }
+  .slogan-container {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .slogan-container {
+    font-size: 1.1rem;
+    width: 450px;
+    top: 5rem;
+    left: 13.5rem;
+  }
+  .slogan-container h1 {
+    font-size: 2.2rem;
+  }
+}
+
+@media only screen and (min-width: 991px) and (max-width: 1199px) {
+  .slogan-container h1 {
+    font-size: 2.3rem;
+  }
+  .slogan-container {
+    font-size: 1.1rem;
+    width: 450px;
+    top: 6.8rem;
+    left: 15.6rem;
+  }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 991px) {
+  .index-main {
+    background-image: url(../assets/mobile.png);
+    background-position: center center;
+  }
+
+  .main-slogan__container {
+    display: none;
+  }
+  .navbar-brand {
+    display: flex;
+    justify-content: center;
+  }
+  .logo {
+    width: 100%;
+    margin: 0;
+  }
+  .quote {
+    width: 155px;
+    margin: 10px 0px;
+  }
+  .mobile-content {
+    display: block;
+    background-color: #0069ff;
+    height: 40vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  .mobile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  .mobile-slogan__container {
+    font-family: "gotham-book";
+    font-size: 1rem;
+    padding: 0px 30px;
+    text-align: center;
+  }
+
+  .mobile-slogan__container h1 {
+    font-size: 2rem;
+    font-family: "gotham-bold";
+    text-align: center;
+  }
+  .mobile-slogan__container p {
+    text-align: center;
+  }
+}
