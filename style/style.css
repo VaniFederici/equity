@@ -71,6 +71,7 @@ body {
   padding: 8px 15px;
   width: 140px;
   border-radius: 25px;
+  text-decoration: none;
 }
 .mobile-quote {
   display: none;
@@ -95,6 +96,133 @@ body {
   display: none;
 }
 
+/*QUOTE SECTION*/
+.quote-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  position: sticky;
+  top: 0px;
+  background-color: #0068fc;
+}
+.quote-bg {
+  background-color: #0069ff;
+}
+.quote-tips_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+}
+
+.quote-tip {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  color: white;
+}
+.quote-tip h4 {
+  text-align: center;
+  font-family: "gotham-book";
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.quote-tip p {
+  text-align: center;
+  padding: 0px 5rem;
+  margin-top: 20px;
+}
+.quote-img {
+  width: 12%;
+  margin-bottom: 12px;
+}
+.first-quote {
+  padding: 100px;
+}
+.label-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px 0px;
+}
+.label-container input {
+  width: 400px;
+  height: 50px;
+  margin: 10px 0px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+}
+.label-container label {
+  color: white;
+}
+.form-container {
+  width: 50%;
+}
+.form-container p {
+  font-family: "gotham-book";
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+.refered-container {
+  display: flex;
+  justify-content: center;
+}
+.refered-container input {
+  width: 825px;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  height: 50px;
+  margin: 10px 5px;
+}
+.refered-container {
+  color: white;
+}
+.text-area {
+  height: 150px !important;
+}
+.form-paragraph {
+  display: flex;
+  justify-content: center;
+}
+.form-paragraph p {
+  color: white;
+  font-size: 14px;
+  font-family: "gotham-light";
+  font-weight: 100;
+  text-align: left;
+}
+.form-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.mailing label {
+  color: white;
+}
+.mailing input {
+  color: white;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+.button-container input {
+  width: 200px;
+  background: white;
+  color: black;
+  font-family: "gotham-medium";
+  border-radius: 20px;
+  padding: 10px 0px;
+  border: none;
+  outline: none;
+}
+
 /*media queries*/
 
 @media only screen and (min-width: 1400px) and (max-width: 1600px) {
@@ -104,6 +232,10 @@ body {
   }
   .slogan-container {
     font-size: 1.2rem;
+  }
+
+  .form-container {
+    width: 65%;
   }
 }
 
@@ -117,6 +249,19 @@ body {
   .slogan-container h1 {
     font-size: 2.5rem;
   }
+  .form-container {
+    width: 60%;
+  }
+  .label-container input {
+    width: 300px;
+  }
+  .refered-container input {
+    width: 635px;
+  }
+  .quote-tips_container{
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+  }
 }
 
 @media only screen and (min-width: 991px) and (max-width: 1199px) {
@@ -129,11 +274,24 @@ body {
     top: 6.8rem;
     left: 15.6rem;
   }
+
+  .label-container {
+    justify-content: center;
+  }
+  .label-container input {
+    width: 300px;
+  }
+  .refered-container input {
+    width: 600px;
+  }
+  .quote-tips_container{
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+  }
 }
 
 @media only screen and (min-width: 300px) and (max-width: 991px) {
-
-  .navbar-toggler{
+  .navbar-toggler {
     display: none;
   }
   .mobile-quote {
@@ -172,7 +330,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 20px;
-    height: 40vh;
+    height: 60vh;
   }
   .mobile-container {
     display: flex;
@@ -195,4 +353,46 @@ body {
   .mobile-slogan__container p {
     text-align: center;
   }
+  .first-quote {
+    padding: 10px;
+}
+  .form-container {
+    width: 133%;
+    padding: 5px;
+}
+.quote-tip p {
+  padding: 0px 5px;
+}
+.quote-tips_container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  justify-items: center;
+}
+.label-container input {
+  width: 90%;
+  height: 28px;
+  margin: 0px 10px;
+  
+}
+.label-container{
+  justify-content: center;
+}
+.refered-container input{
+  width: 330px;
+  height: 28px;
+}
+.form-container p {
+  font-size: 1rem;
+  padding: 0px 5px;
+}
+.form-paragraph p{
+  font-size: 10px;
+  padding: 10px;
+  text-align: center;
+}
+.button-container input {
+  margin-top: 5px;
+  padding: 5px 0px;
+}
 }

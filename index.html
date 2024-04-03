@@ -34,7 +34,10 @@
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item quote-container">
-                  <a class="nav-link quote" aria-current="page" href="#"
+                  <a
+                    class="nav-link quote"
+                    aria-current="page"
+                    href="./quote.html"
                     >GET A QUOTE</a
                   >
                 </li>
@@ -56,25 +59,199 @@
           </p>
         </div>
       </div>
-      <div class=" quote-container mobile-quote">
-        <a class="nav-link quote" aria-current="page" href="#"
-          >GET A QUOTE</a
-        >
+      <div class="quote-container mobile-quote">
+        <a class="nav-link quote" aria-current="page" href="#">GET A QUOTE</a>
       </div>
     </main>
     <section class="mobile-content">
       <div class="mobile-slogan__container">
         <div class="mobile-container">
-          <h1>Discover the Power  <br> of Joining EIG</h1>
+          <h1>
+            Discover the Power <br />
+            of Joining EIG
+          </h1>
           <p>
-            Joining EIG isn't just about 
-            partnership; it's about a strategic
-            alliance that empowers insurance 
-            brokers to thrive, evolve, and secure 
-            a successful future in the insurance 
-            industry.
+            Joining EIG isn't just about partnership; it's about a strategic
+            alliance that empowers insurance brokers to thrive, evolve, and
+            secure a successful future in the insurance industry.
           </p>
         </div>
+      </div>
+    </section>
+    <section class="form-contact quote-bg">
+      <div class="first-quote">
+        <div class="quote-tips_container">
+          <div class="quote-tip">
+            <img class="quote-img" src="./assets/sustainable-icon.png" />
+            <div class="quote-tip__text">
+              <h4>
+                SUSTAINABLE GROWTH <br />
+                WITHOUT ADDED EXPENSE
+              </h4>
+              <p>
+                Find the tools and support you need to grow your Personal Lines
+                business. Use our proprietary mortgage broker / realtor program
+                to dramatically increase your referrals.
+              </p>
+            </div>
+          </div>
+          <div class="quote-tip">
+            <img class="quote-img" src="./assets/efficienciy-icon.png" />
+            <div class="quote-tip__text">
+              <h4>
+                ENHANCED <br />
+                EFFICIENCY
+              </h4>
+              <p>
+                Joining EIG means embracing efficiency. We offer tools,
+                resources, and a collaborative environment that streamlines
+                operations, allowing you to serve your clients with increased
+                efficiency.
+              </p>
+            </div>
+          </div>
+          <div class="quote-tip">
+            <img class="quote-img" src="./assets/cost-icon.png" />
+            <div class="quote-tip__text">
+              <h4>
+                COST <br />
+                REDUCTION
+              </h4>
+              <p>
+                Lowering your costs is a priority at EIG. Benefit from our
+                optimized processes and economies of scale, enabling you to
+                operate more cost-effectively while maintaining high standards
+                of service.
+              </p>
+            </div>
+          </div>
+          <div class="quote-tip">
+            <img class="quote-img" src="./assets/increased-icon.png" />
+            <div class="quote-tip__text">
+              <h4>
+                INCREASED <br />
+                BUSINESS VALUATION
+              </h4>
+              <p>
+                Partnering with EIG contributes to the enhancement of your
+                business's valuation. Our collaborative efforts and market
+                presence positively impact the overall value of your insurance
+                brokerage.
+              </p>
+            </div>
+          </div>
+          <div class="quote-tip">
+            <img class="quote-img" src="./assets/strategicaly-icon.png" />
+            <div class="quote-tip__text">
+              <h4>STRATEGICALLY CRAFTED <br />EXIT PLANS</h4>
+              <p>
+                EIG understands the importance of planning for the future. We
+                assist in creating well-thought-out exit plans, ensuring a
+                smooth transition whenever you decide to step back from your
+                insurance brokerage
+              </p>
+            </div>
+          </div>
+          <div class="quote-tip">
+            <img class="quote-img" src="./assets/tailored-icon.png" />
+            <div class="quote-tip__text">
+              <h4>
+                TAILORED SOLUTIONS AND <br />
+                EXPANSIVE PRODUCT RANGE
+              </h4>
+              <p>
+                At EIG, becoming an insurance partner means gaining access to a
+                broad and diverse selection of insurance products. We provide a
+                comprehensive range of coverage options, ensuring you can offer
+                your clients a tailored and versatile suite of insurance
+                solutions.
+              </p>
+            </div>
+          </div>
+        </div>
+        <section class="form-section">
+          <div class="form-container">
+            <p>
+              Tell us a little bit about yourself and our team will provide you
+              with all the information you need to take your business to the
+              next level.
+            </p>
+            <form
+              name="form"
+              action="contact.php"
+              method="POST"
+              onSubmit="return validate();"
+            >
+              <div class="label-container">
+                <div class="input-container">
+                  <label for="first-name">First Name:</label><br />
+                  <input type="text" id="first-name" name="first-name" />
+                </div>
+                <div class="input-container">
+                  <label for="last-name">Last Name:</label><br />
+                  <input type="text" id="last-name" name="last-name" />
+                </div>
+              </div>
+              <div class="label-container">
+                <div class="input-container">
+                  <label for="City">City:</label><br />
+                  <input type="text" id="city" name="city" />
+                </div>
+                <div class="input-container">
+                  <label for="state">State/Province:</label><br />
+                  <input type="text" id="state" name="state" />
+                </div>
+              </div>
+              <div class="label-container">
+                <div class="input-container">
+                  <label for="email">Email</label><br />
+                  <input type="email" id="email" name="email" />
+                </div>
+                <div class="input-container">
+                  <label for="phone">Phone</label><br />
+                  <input type="phone" id="phone" name="phone" />
+                </div>
+              </div>
+              <div class="refered-container">
+                <div class="input-container">
+                  <label class="refered" for="referred">Referred by:</label
+                  ><br />
+                  <input type="referred" id="referred" name="referred" /><br />
+                </div>
+              </div>
+              <div class="refered-container">
+                <div class="input-container">
+                  <label for="comments">Additional Comments:</label><br />
+                  <input
+                    class="text-area"
+                    type="comments"
+                    id="comments"
+                    name="comments"
+                  /><br />
+                </div>
+              </div>
+              <div class="form-paragraph">
+                <p>
+                  By checking this box, I consent for Equity Insurance Group to
+                  send promotional messages, inlcuding automated text or phone
+                  messages, to the phone number I provided above. I understend
+                  that consent is not a condition of purchase, and I will have
+                  the ability to opt out of promotional messages if I no longer
+                  want to recive them.
+                </p>
+              </div>
+              <div class="mailing">
+                <input type="radio" name="consent" value="consent" /> I
+                consent<br />
+                <input type="radio" name="notconsent" value="notconsent" /> I do
+                not consent<br />
+              </div>
+              <div class="button-container">
+                <input class="button" type="submit" value="Submit" />
+              </div>
+            </form>
+          </div>
+        </section>
       </div>
     </section>
     <script
