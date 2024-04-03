@@ -34,10 +34,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item quote-container">
-                  <a
-                    class="nav-link quote"
-                    aria-current="page"
-                    href="./quote.html"
+                  <a class="nav-link quote" aria-current="page" href="#quote"
                     >GET A QUOTE</a
                   >
                 </li>
@@ -60,7 +57,7 @@
         </div>
       </div>
       <div class="quote-container mobile-quote">
-        <a class="nav-link quote" aria-current="page" href="#">GET A QUOTE</a>
+        <a class="nav-link quote" aria-current="page" href="#quote">GET A QUOTE</a>
       </div>
     </main>
     <section class="mobile-content">
@@ -171,11 +168,13 @@
         </div>
         <section class="form-section">
           <div class="form-container">
+            <a name="quote"></a>
             <p>
               Tell us a little bit about yourself and our team will provide you
               with all the information you need to take your business to the
               next level.
             </p>
+            
             <form
               name="form"
               action="contact.php"
@@ -241,10 +240,10 @@
                 </p>
               </div>
               <div class="mailing">
-                <input type="radio" name="consent" value="consent" /> I
-                consent<br />
-                <input type="radio" name="notconsent" value="notconsent" /> I do
-                not consent<br />
+                <input class="radio" type="radio" name="consent" value="consent" /><spam>I
+                  consent</spam> <br/>
+                <input class="radio" type="radio" name="notconsent" value="notconsent" /><spam>I do
+                  not consent</spam>
               </div>
               <div class="button-container">
                 <input class="button" type="submit" value="Submit" />
